@@ -592,7 +592,7 @@ font-size: 2em;
  .contact-container {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 20px;
-      padding: 3rem 2.5rem;
+      padding: 3em 2.5em;
       width: 40%;
       height: 80%;
       display: flex;
@@ -612,7 +612,7 @@ font-size: 2em;
     
     /* Heading */
     .contact-container h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 1em;
       font-weight: 700;
       font-size: 2.5em;
       color: #d8b4fe; /* light purple */
@@ -673,12 +673,12 @@ font-size: 2em;
     }
     
     .contact-container button {
-      padding: 1rem;
+      padding: 1em;
       border-radius: 12px;
       border: none;
       background: #a855f7;
       color: #fff;
-      font-size: 1.15rem;
+      font-size: 1.15em;
       font-weight: 700;
       cursor: pointer;
       box-shadow: 0 4px 15px #a855f7aa;
@@ -703,19 +703,19 @@ font-size: 2em;
     }
     
     .contact-container .social-links p {
-      margin-bottom: 0.8rem;
-      font-size: 1rem;
+      margin-bottom: 0.8em;
+      font-size: 1em;
     }
     
     .contact-container .social-icons {
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
+      gap: 1.5em;
     }
     
     .contact-container .social-icons a {
       color: #d8b4fecc;
-      font-size: 1rem;
+      font-size: 1em;
       transition: color 0.3s;
     }
     
