@@ -594,7 +594,7 @@ font-size: 2em;
       border-radius: 20px;
       padding: 3rem 2.5rem;
       width: 40%;
-      height: 75%;
+      height: 80%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -614,7 +614,7 @@ font-size: 2em;
     .contact-container h2 {
       margin-bottom: 1rem;
       font-weight: 700;
-      font-size: 2.5rem;
+      font-size: 2.5em;
       color: #d8b4fe; /* light purple */
       text-shadow: 0 0 5px #d8b4fe;
     }
@@ -622,10 +622,10 @@ font-size: 2em;
     /* Intro text */
     .intro {
       text-align: center;
-      margin-bottom: 2rem;
-      font-size: 1rem;
+      margin-bottom: 2em;
+      font-size: .9em;
       color: #e0d7f7;
-      line-height: 1.5;
+      line-height: 1.2;
     }
     
     .intro a {
@@ -642,15 +642,15 @@ font-size: 2em;
     form {
       display: flex;
       flex-direction: column;
-      gap: 1.2rem;
+      gap: 1.2em;
       width: 80%;
     }
     
     input, textarea {
-      padding: 0.5rem 1rem;
+      padding: 0.5em 1em;
       border-radius: 12px;
       border: none;
-      font-size: 1rem;
+      font-size: 1em;
       font-weight: 500;
       background: rgba(255, 255, 255, 0.15);
       color: #fff;
@@ -793,12 +793,7 @@ font-size: 2em;
 
 /* RESPONSIVE */
 /* Tablets and below */
-@media (min-width: 768px) and (max-width: 1024px){
-   .contact-container{
-    height: 85%;
-    width: 60% ;
-   }
-}
+
 @media (min-width: 480px) and (max-width: 768px){
   .hamburger {
     display: block;
