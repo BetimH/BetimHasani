@@ -66,14 +66,15 @@
     </div>
     <!-- ABOUT ME -->
      <div class="about-me" id="about-me">
-        <div class="title" data-aos="zoom-in" data-aos-duration="1300">
-        <h1>About me<i class="fa-solid fa-comment" style=" margin: 0 1em;"></i></h1>
-        </div>
+
         <div class="content">
+          
             <div class="image" data-aos="zoom-in" data-aos-duration="1300"></div>
             <div class="text" data-aos="zoom-in" data-aos-duration="1300">
+                            <h1> <i class="fas fa-id-card" style="margin-right: .5em;"></i>About me</h1>
+
                 <p>I'm <span>Betim Hasani</span>, a passionate front-end developer who loves building clean, modern, and responsive websites. With a strong foundation in HTML, CSS, and JavaScript, I focus on creating user-friendly interfaces that deliver great user experiences.
-I enjoy turning ideas into code and continuously learning new technologies to stay ahead in the fast-evolving web world. Whether it's building personal projects or helping clients bring their vision to life — I’m all about clean design and performance.</p>
+I enjoy turning ideas into code and continuously learning new technologies to stay ahead in the fast-evolving web world. Whether it's building personal projects or helping clients bring their vision to life — I’m all about clean design and performance thanks to:</p>
                 <div class="skills">
                     <h1>HTML</h1>
                     <h1>CSS</h1>
@@ -84,13 +85,13 @@ I enjoy turning ideas into code and continuously learning new technologies to st
         </div>
      </div>
      <!-- skills -->
-      <div class="skills" id="skills">
+      <div class="myskills" id="skills">
       <main class="skills-wrap" role="main" aria-labelledby="skills-title">
     <div class="orb orb--1" aria-hidden="true"></div>
     <div class="orb orb--2" aria-hidden="true"></div>
 
     <header class="skills-header" data-aos="fade-up" data-aos-duration="1500">
-      <h1 id="skills-title" class="skills-title" >My Skills</h1>
+      <h1 id="skills-title" class="skills-title" >My Skills<i class="fas fa-laptop-code" style="margin-left: .5em;"></i></h1>
       <p class="skills-sub">Technologies and tools I work with every day.</p>
     </header>
 
@@ -104,7 +105,7 @@ I enjoy turning ideas into code and continuously learning new technologies to st
           <i class="fab fa-html5" aria-hidden="true"></i>
         </div>
         <div class="name">HTML5</div>
-        <div class="level">Advanced</div>
+        <div class="level">The backbone of every website’s structure.</div>
         <div class="accent" aria-hidden="true"></div>
       </div>
 
@@ -116,7 +117,7 @@ I enjoy turning ideas into code and continuously learning new technologies to st
           <i class="fab fa-css3-alt"></i>
         </div>
         <div class="name">CSS3</div>
-        <div class="level">Advanced</div>
+        <div class="level">Makes websites stylish and responsive.</div>
         <div class="accent" aria-hidden="true"></div>
       </div>
 
@@ -128,7 +129,7 @@ I enjoy turning ideas into code and continuously learning new technologies to st
           <i class="fab fa-js-square"></i>
         </div>
         <div class="name">JavaScript</div>
-        <div class="level">Beginner</div>
+        <div class="level">Adds interactivity and dynamic logic.</div>
         <div class="accent" aria-hidden="true"></div>
       </div>
 
@@ -144,7 +145,7 @@ I enjoy turning ideas into code and continuously learning new technologies to st
           <i class="fab fa-git-alt"></i>
         </div>
         <div class="name">Git</div>
-        <div class="level">Beginner</div>
+        <div class="level">Tracks and manages code changes.</div>
         <div class="accent" aria-hidden="true"></div>
       </div>
 
@@ -156,7 +157,7 @@ I enjoy turning ideas into code and continuously learning new technologies to st
           <i class="fab fa-github"></i>
         </div>
         <div class="name">GitHub</div>
-        <div class="level">Advanced</div>
+        <div class="level">Hosts and shares code projects.</div>
         <div class="accent" aria-hidden="true"></div>
       </div>
 
@@ -168,10 +169,10 @@ I enjoy turning ideas into code and continuously learning new technologies to st
            data-level="Intermediate"
            data-desc="ARIA, keyboard navigation, contrast, semantic markup" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="800">
         <div class="icon" aria-hidden="true">
-          <i class="fa-solid fa-universal-access"></i>
+          <i class="fab fa-bootstrap"></i>
         </div>
-        <div class="name">Accessibility</div>
-        <div class="level">Intermediate</div>
+        <div class="name">Bootsrap</div>
+        <div class="level">Builds fast, responsive designs.</div>
         <div class="accent" aria-hidden="true"></div>
         <div class="tooltip" role="status" aria-live="polite"></div>
       </div>
@@ -184,11 +185,23 @@ I enjoy turning ideas into code and continuously learning new technologies to st
           <i class="fa-solid fa-vector-square"></i>
         </div>
         <div class="name">Design</div>
-        <div class="level">Intermediate</div>
+        <div class="level">Shapes visuals and layout for clarity and impact.</div>
         <div class="accent" aria-hidden="true"></div>
         <div class="tooltip" role="status" aria-live="polite"></div>
       </div>
-
+    <div class="skill" tabindex="0"
+           data-skill="Design"
+           data-level="Intermediate"
+           data-desc="Figma wireframes, UI systems, and design-to-code workflows" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1100">
+        <div class="icon" aria-hidden="true">
+          <i class="fa-solid fa-vector-square"></i>
+        </div>
+        <div class="name">UX/UI</div>
+        <div class="level">Creates simple, user-friendly interfaces.</div>
+        <div class="accent" aria-hidden="true"></div>
+        <div class="tooltip" role="status" aria-live="polite"></div>
+      </div>
+      
     </section>
   </main>
   </div>
@@ -230,7 +243,7 @@ I enjoy turning ideas into code and continuously learning new technologies to st
             
       
         </div>
-        <div class="cards" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="cards" id="noncards" data-aos="zoom-in" data-aos-duration="1500">
             <div class="card">
                 <div class="image"><img src="images/lambo.png" alt="" srcset=""></div>
                 <div class="text">
@@ -266,9 +279,7 @@ I enjoy turning ideas into code and continuously learning new technologies to st
     <div class="contact-container" role="main" aria-label="Contact Form" data-aos="zoom-in" data-aos-duration="1500">
     <h2>Get in Touch!</h2>
     <p class="intro">
-      Whether you have a question, a project idea, or just want to say hi, I’d love to hear from you.<br />
-      Use the form below or reach me at
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=betimhasani3@gmail.com" target="_blank">betimhasani3@gmail.com</a><br/>
+      Use the form below or reach me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=betimhasani3@gmail.com" target="_blank">betimhasani3@gmail.com</a><br/>
       I typically respond within 24 hours.
     </p>
     
@@ -280,48 +291,54 @@ I enjoy turning ideas into code and continuously learning new technologies to st
       <button type="submit">Send Message</button>
     </form>
     
-    <div class="social-links">
-      <p>Or find me on social media:</p>
-      <div class="social-icons">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </div>
-    </div>
 
   </div>
  
   </div>
       <!-- FOOTER -->
        
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-logo">
-      <img src="images/logo.jpg" alt="" srcset="">
-    </div>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="#about-me">About</a>
-      <a href="gallery">Gallery</a>
-      <a href="#">Contact</a>
-    </div>
-    <div class="footer-social">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 BH. All rights reserved.</p>
-  </div>
-</footer>
+    <footer>
+    
+      <div class="container-footer">
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact</a></li>
+
+          </ul>
+        </div>
+        <div class="quick-links">
+          <h3>Skills</h3>
+          <ul>
+            <li><a href="">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">JavaScript</a></li>
+            <li><a href="">BootStrap</a></li>
+            <li><a href="">Git</a></li>
+            <li><a href="">GitHub</a></li>
+            <li><a href="">Design</a></li>
+            <li><a href="">UX/UI</a></li>
+          </ul>
+        </div>
+        <div class="quick-links">
+          <h3>Social</h3>
+          <ul>
+          <li><a href="https://github.com/betimh" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i>github</a></li>
+          <li><a href="https://www.linkedin.com/in/betimhasani" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i>Linked In</a></li>
+          <li><a href="https://www.instagram.com/betimhasani" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i>Instagram</a></li>
+          <li><a href="https://www.facebook.com/betimhasani" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i>Facebook</a></li>
+          <li><a href="mailto:betimhasani3@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i>mail</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Betim Hasani. Website designed & coded by Betim Hasani. All rights reserved.</p>
+      </div>
+    </footer>
        
       <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>

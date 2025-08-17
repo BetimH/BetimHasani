@@ -247,18 +247,16 @@ font-size:.85em;
 
 .about-me{
     width: 100%;
-    height: 60vh;
-    background-color:#1A1B24;;
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
-.about-me .title{
-    margin-left: 18em;
-    margin-bottom: 2em;
-}
-.about-me .title h1{
+
+.about-me .content h1{
     color: #C7C7D4;
+    margin: 1em 0;
+     font-size:2.2em;
+      letter-spacing:-0.5px;
+      font-family: sans-serif;
 }
 .about-me .title p{
     color:#C7C7D4 ;
@@ -283,13 +281,9 @@ font-size:.85em;
     align-items: center;
     flex-direction: row;
     width: 100%;
-    height: 40vh;
 }
-.about-me .content .text{
-    height: 40vh;
-}
+
 .about-me .content .text .skills{
-    height: 10%;
     display: flex;
     justify-content: flex-start;
     gap: 2em;
@@ -333,21 +327,18 @@ font-size:.85em;
     
 }
 /* skills */
-.skills{
+.myskills{
   width: 100%;
-  height: 100vh;
-  background-color: #1A1B24;
   display: flex;
+  align-items: center;
   justify-content: center;
-align-items: center;
+  margin-top: 5em;
 }
 .skills-wrap{
       width:100%;
       max-width:980px;
       padding:36px;
       position:relative;
-      overflow:hidden;
-      
     }
 
  
@@ -356,12 +347,10 @@ align-items: center;
       text-align:center;
       margin-bottom:28px;
       position:relative;
-      z-index:2;
     }
 
     .skills-title{
-      font-size:42px;
-      font-weight:800;
+          font-size:2.2em;
       letter-spacing:-0.5px;
       margin:0 0 8px 0;
       color: #C7C7D4;
@@ -475,12 +464,12 @@ align-items: center;
 
 .gallery{
     width: 100%;
-    height: 150vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   background-color: #1A1B24;
+  margin-top: 5em;
 }
 .gallery .title{
     width: 100%;
@@ -492,6 +481,8 @@ align-items: center;
 }
 .gallery .title h1{
     color: #C7C7D4;
+         font-size:2.2em;
+      letter-spacing:-0.5px;
 }
 .gallery .title i{
 color: #C7C7D4;
@@ -581,18 +572,17 @@ font-size: 2em;
 /* CONTACT */
 .contact{
   width: 100%;
-  height: 150vh;
-  background-color:#1A1B24;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   gap: 2em;
+  padding: 2em 1em;
+  margin-top: 5em;
 }
  .contact-container {
-      background: rgba(255, 255, 255, 0.1);
       border-radius: 20px;
-      padding: 3em 2.5em;
+      padding: 3em 1em;
       width: 40%;
       display: flex;
       flex-direction: column;
@@ -603,8 +593,7 @@ font-size: 2em;
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border: 1px solid rgba(255, 255, 255, 0.18);
-      box-sizing: border-box;
-        box-sizing: border-box;
+      
 
     }
 
@@ -620,11 +609,12 @@ font-size: 2em;
     
     /* Intro text */
     .intro {
-      text-align: center;
+      text-align: left;
       margin-bottom: 2em;
       font-size: .9em;
       color: #e0d7f7;
       line-height: 1.2;
+      width: 80%;
     }
     
     .intro a {
@@ -643,7 +633,6 @@ font-size: 2em;
       flex-direction: column;
       gap: 1.2em;
       width: 80%;
-     
     }
     
     input, textarea {
@@ -690,103 +679,83 @@ font-size: 2em;
       box-shadow: 0 6px 20px #9333eacc;
     }
     
-    /* Social links */
-    .contact-container .social-links {
-      margin-top: 2.5rem;
-      text-align: center;
-      color: #d8b4fecc;
-      font-weight: 600;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+
     
-    .contact-container .social-links p {
-      margin-bottom: 0.8em;
-      font-size: 1em;
-    }
-    
-    .contact-container .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 1.5em;
-    }
-    
-    .contact-container .social-icons a {
-      color: #d8b4fecc;
-      font-size: 1em;
-      transition: color 0.3s;
-    }
-    
-    .contact-container .social-icons a:hover {
-      color: #a855f7;
-    }
 /* FOOTER */
-.footer {
-  background: #333;
-  color: #fff;
-  padding: 40px 0 20px;
-  font-family: 'Arial', sans-serif;
-}
-
-.footer-content {
+footer{
+  width: 100%;
+  height: auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-}
-.footer-logo{
-  width: 5%;
-}
-.footer-logo img{
-  width: 80%;
-  border-radius: 50%;
-}
-.footer-logo h2 {
-  color: transparent;
-  -webkit-text-stroke: 1px #5f0f40;
-  font-size: 28px;
-  margin-bottom: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+  gap: 2em;
+  background-color: #1e1e2f;
 }
 
-.footer-logo p {
-  font-size: 14px;
-  color: #bbb;
+
+  .footer-social-links a:hover {
+    color: #fff;
+    transform: scale(1.2);
+    text-shadow: 0 0 8px #C9A0FF;
+  }
+
+.container-footer{
+  width: 100%;
+   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.footer-links a {
-  color: #bbb;
+.quick-links{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.quick-links h3{
+  color: #9b59b6;
+}
+.quick-links ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.quick-links:nth-child(3) ul{
+  display: block;
+}
+.quick-links ul li{
+  list-style: none;
+ 
+}
+.quick-links ul li a{
   text-decoration: none;
-  margin-right: 20px;
-  font-size: 14px;
-  transition: 0.3s;
+  color: #C7C7D4;
+  font-size: .8em;
+ 
 }
-
-.footer-links a:hover {
-  color: #C9A0FF;
+.quick-links ul li a i{
+  margin-right: 1em;
 }
-
-.footer-social a {
-  color: #bbb;
-  font-size: 18px;
-  margin-right: 15px;
-  transition: 0.3s;
+.quick-links ul li a:hover{
+color:#c084fc ;
 }
-
-.footer-social a:hover {
-  color: #C9A0FF;
+.footer-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #2d2d44;
+  width: 100%;
+  padding-top: 2em;
 }
-
-.footer-bottom {
+.footer-bottom p{
   text-align: center;
-  padding-top: 20px;
-  font-size: 13px;
-  color: #777;
-  border-top: 1px solid #333;
+  color: gray;
+  font-size: .7em;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -1105,7 +1074,10 @@ text-align: center;
   }
   
 
-  .nav-contact, .experience, .about-me .title i, .gallery .cards .card:nth-child(3), .gallery .cards .card:nth-child(2), .about-me .image{
+  .nav-contact, .experience, .about-me .title i, .about-me .image, .content .text h1 i, .gallery .title i{
+    display: none;
+  }
+  #noncards{
     display: none;
   }
   .hero {
@@ -1162,9 +1134,7 @@ text-align: center;
     padding: .7rem 1.5rem;
    }
 
-  .content .text h1 {
-    font-size: 2em;
-  }
+
 
   .experience {
     flex-direction: column;
@@ -1177,9 +1147,8 @@ text-align: center;
   }
 
   .about-me {
-    height: 100vh;
-    padding: 2em 1em;
-    flex-wrap: wrap;
+    padding: 1em 1em;
+    flex-direction: column;
 }
 
   .about-me .title {
@@ -1189,17 +1158,20 @@ text-align: center;
 
   .about-me .content {
     flex-direction: column;
+    justify-content: flex-start;
     gap: 2em;
     text-align: center;
+        height: auto;
+
   }
 
   
 
   .about-me .text {
     width: 90%;
+
   }
   .about-me .content .text .skills{
-    height: 10%;
     display: flex;
     justify-content: center;
     gap: 2em;
@@ -1209,6 +1181,7 @@ text-align: center;
     }
     .about-me h1{
       text-align: center;
+
     }
 
   .about-me .skills{
@@ -1217,26 +1190,26 @@ text-align: center;
     .explore{
     margin: auto;
   }
-    .skills{
-    margin-top: 5em;
-    height: 150vh; 
-  }
+
 
   .gallery {
-    height: 150vh;
     padding: 2em 1em;
+    justify-content: flex-start;
   }
 
   .gallery .cards {
-    height: 50vh;
     width: 100%;
-    flex-wrap: wrap;
+    height: auto;
     justify-content: center;
+    flex-direction: column;
   }
 
   .gallery .cards .card {
     width: 90%;
-    height: 50vh;
+    margin: 2em;
+  }
+  .gallery .cards .card p{
+margin: 1.5em 0;
   }
 
   .gallery .cards .card:hover {
@@ -1253,10 +1226,14 @@ text-align: center;
     align-items: center;
     gap: 2em;
   }
+  .contact{
+    height: auto;
+  }
   .contact-container{
-    width: 90%;
-    height: 75%;
+    width: 100%;
+    height: auto;
     box-shadow: none;
+    padding: 3rem 1.5rem;
   }
   form{
     width: 100%;
@@ -1273,5 +1250,7 @@ text-align: center;
   }
   .intro{
     font-size: .7em;
+    width: auto;
+    
   }
 }
