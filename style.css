@@ -183,9 +183,10 @@ nav ul li a:active{
     font-weight: bold;
     margin: 0;
 }
-.content .text p{
+.hero .content .text p{
     color: white;
     font-size:.8em;
+    margin-top: 2em;
 }
 .social-icons{
     width: 20%;
@@ -284,6 +285,10 @@ nav ul li a:active{
     align-items: center;
     flex-direction: row;
     width: 100%;
+}
+.about-me .content  p{
+    color: white;
+    font-size:1em;
 }
 
 .about-me .content .text .skills{
