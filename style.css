@@ -253,6 +253,7 @@ nav ul li a:active{
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 2em;
 }
 
 .about-me .content h1{
@@ -268,6 +269,9 @@ nav ul li a:active{
 }
 .about-me .title p span{
     font-weight: bold;
+}
+.about-me .text{
+  width: 50%;
 }
 .about-me .image{
     width: 20%;
@@ -288,7 +292,7 @@ nav ul li a:active{
 }
 .about-me .content  p{
     color: white;
-    font-size:.8em;
+    font-size:.9em;
 }
 
 .about-me .content .text .skills{
