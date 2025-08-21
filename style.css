@@ -496,8 +496,8 @@ font-size: 2em;
 
 }
 .gallery .cards .card{
-    width: 19%;
-    height: 97%;
+    width: 20%;
+    height: 100%;
     padding: .7em;
     backdrop-filter: blur(5px);
    display: flex;
@@ -510,8 +510,8 @@ font-size: 2em;
 .gallery .cards .card:hover{
     background-color: #1A1B24;
    box-shadow: 0 10px 40px rgba(133,86,255,0.20), 0 0 0 4px rgba(133,86,255,0.06);
-    height: 100%;
-}
+    transform: translateY(-8px);
+  }
 .gallery .cards .card .image{
     width: 100%;
     height: 50%;
@@ -537,7 +537,7 @@ font-size: 2em;
 }
 .gallery .cards .card .text p{
     font-size: .75em;
-    line-height: 1.2;
+    line-height: 1.5;
     color: #EDE4FF;
   }
 .gallery .cards .card .text a{
@@ -552,7 +552,7 @@ font-size: 2em;
    text-align: center;
     font-weight: bold;
     transition: .2s ease-in-out;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 .gallery .cards .card .text a:hover{
     background-color: #1E002B;
