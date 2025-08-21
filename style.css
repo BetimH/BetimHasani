@@ -288,7 +288,7 @@ nav ul li a:active{
 }
 .about-me .content  p{
     color: white;
-    font-size:1em;
+    font-size:.8em;
 }
 
 .about-me .content .text .skills{
@@ -311,7 +311,6 @@ nav ul li a:active{
     color: #1E002B;
     transition: .1s ease-in-out;
     font-weight: bold;
-    margin-top: 2em;
     text-align: center;
     text-decoration: none;
 }
