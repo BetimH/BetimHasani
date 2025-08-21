@@ -67,18 +67,18 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    padding: .6em 1em;
+    padding: .5em 1em;
     color: white;
     border-radius: 10px;
     transition: .2s ease-in-out;
-    font-size: .9em;
+    font-size: .8em;
 }
 nav ul li a:hover{
     background-color: white;
     color: black;
     box-shadow: 0px 0px 10px white;
     font-weight: bold;
-        padding: .6em 1.3em;
+        padding: .5em 1.5em;
 
 }
 nav ul li a:active{
@@ -93,15 +93,14 @@ nav ul li a:active{
 }
 .nav-contact{
    background-color:#C9A0FF;
-    padding: .5em 1em;
+    padding: .4em 1em;
     border: none;
     border-radius: 10px;
     color: #1E002B;
    transition: .15s ease-in-out;
-    font-weight: bold;
     text-decoration: none;
-    font-size: .9em;
-
+    font-size: .8em;
+    font-weight: 500;
 }
 .nav-contact:hover{
     background-color: #1E002B;
@@ -155,7 +154,8 @@ nav ul li a:active{
 .content .image:hover{
     box-shadow: 0px 0px 20px #6a0dad;
     border-bottom: #9b59b6 5px solid;
-    transition: .2s ease-in-out;
+        transition: .2s all ease-in-out;
+
 }
 
 .content .text{
@@ -168,8 +168,8 @@ nav ul li a:active{
 .content .text h2{
     color: white;
     font-size: 1.2em;
-    line-height: 0;
-
+  margin: 0;
+  line-height: 0;
 }
 .content .text span{
     color: #C9A0FF;
@@ -178,11 +178,10 @@ nav ul li a:active{
 .content .text h1{
     border-radius: 20px;
     color: white;
-    font-size: 3em; 
+    font-size: 3.2em; 
     font-family: monospace;
     font-weight: bold;
-  line-height: 0;
-  
+    margin: 0;
 }
 .content .text p{
     color: white;
@@ -195,7 +194,7 @@ nav ul li a:active{
     gap: 1em;
 }
 .social-icons i{
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #C9A0FF;
 }
 .social-icons i:hover{
@@ -258,12 +257,13 @@ nav ul li a:active{
 .about-me .content h1{
     color: #C7C7D4;
     margin: 1em 0;
-    font-size:2.2em;
+    font-size:2em;
     letter-spacing:-0.5px;
     font-family: sans-serif;
 }
 .about-me .title p{
     color:#C7C7D4 ;
+    font-size: 1em;
 }
 .about-me .title p span{
     font-weight: bold;
@@ -387,16 +387,15 @@ header.skills-header{
       flex-direction:column;
       gap:12px;
       align-items:center;
-      justify-content:center;
       min-height:120px;
       text-align:center;
       border:1px solid var(--glass-border);
       cursor:default;
       transition: .3s ease-in-out;
       outline: none;
+
     }
 
-    .skill:hover,
     .skill:focus{
       transform: translateY(-8px);
       box-shadow: var(--glow);
@@ -426,17 +425,13 @@ header.skills-header{
     .skill .level{
       font-size:13px;
       color: #C7C7D4;
-      margin-top:2px;
+      
     }
-
-
 
     @keyframes pop{
       from{ transform: translateY(6px) scale(.98); opacity:0 }
       to{ transform: translateY(0) scale(1); opacity:1 }
     }
-
-    /* responsive */
     @media (max-width:980px){
       .skills-grid{ grid-template-columns: repeat(3, 1fr); }
       .skills-title{ font-size:36px; }
@@ -449,20 +444,11 @@ header.skills-header{
       .skill{ min-height:110px; padding:16px; border-radius:12px; }
       .skill .icon{ width:48px; height:48px; font-size:22px; border-radius:10px; }
     }
-
- 
-   
-
-
-
-
-    /* focus visible for keyboard users */
     .skill:focus{
       box-shadow: 0 10px 40px rgba(133,86,255,0.20), 0 0 0 4px rgba(133,86,255,0.06);
       transform: translateY(-8px);
     }
 
-/* GALLERY */
 
 .gallery{
     width: 100%;
@@ -475,7 +461,6 @@ header.skills-header{
 }
 .gallery .title{
     width: 100%;
-    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -490,7 +475,6 @@ header.skills-header{
 color: #C7C7D4;
 font-size: 2em;
 
-
 }
 
 .gallery .cards{
@@ -504,12 +488,11 @@ font-size: 2em;
 
 }
 .gallery .cards .card{
-    width: 20%;
-    height: 100%;
-    padding: .5em;
+    width: 19%;
+    height: 97%;
+    padding: .7em;
     backdrop-filter: blur(5px);
    display: flex;
-   justify-content:flex-start;
    flex-direction: column;
     border: none;
     border-radius: 10px;
@@ -518,9 +501,8 @@ font-size: 2em;
 }
 .gallery .cards .card:hover{
     background-color: #1A1B24;
-    transform: scale(1.1);
    box-shadow: 0 10px 40px rgba(133,86,255,0.20), 0 0 0 4px rgba(133,86,255,0.06);
-
+    height: 100%;
 }
 .gallery .cards .card .image{
     width: 100%;
@@ -540,28 +522,29 @@ font-size: 2em;
     height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: center;
 }
 .gallery .cards .card .text h1{
     font-size: 1.5em;
 }
 .gallery .cards .card .text p{
-    font-size: .8em;
-    line-height: 1.1;
+    font-size: .75em;
+    line-height: 1.2;
     color: #EDE4FF;
-}
+  }
 .gallery .cards .card .text a{
     text-decoration: none;
     color: #1E002B;
     background-color: #C9A0FF;
-    padding: 1em 1em;
+    padding: .5em 1em;
     border-radius: 10px;
     border: none;
     width: 100%;
-    font-size: .8em;
+    font-size: .9em;
    text-align: center;
     font-weight: bold;
     transition: .2s ease-in-out;
+    margin-top: 3em;
 }
 .gallery .cards .card .text a:hover{
     background-color: #1E002B;
@@ -580,7 +563,7 @@ font-size: 2em;
   box-sizing: border-box;
   gap: 2em;
   padding: 2em 1em;
-  margin: 3em 0;
+  margin-top: 5em;
 }
  .contact-container {
       border-radius: 20px;
@@ -638,7 +621,7 @@ font-size: 2em;
     }
     
     input, textarea {
-      padding: 1em 1em;
+      padding: 0.5em .7em;
       border-radius: 12px;
       border: none;
       font-size: 1em;
@@ -664,16 +647,15 @@ font-size: 2em;
     }
     
     .contact-container button {
-      padding: 1em;
+      padding: .7em 1em;
       border-radius: 12px;
       border: none;
       background: #a855f7;
       color: #fff;
       font-size: 1.15em;
-      font-weight: 700;
       cursor: pointer;
-      box-shadow: 0 4px 15px #a855f7aa;
       transition: background 0.3s, box-shadow 0.3s;
+   
     }
     
     .contact-container button:hover {
@@ -717,13 +699,20 @@ footer{
  padding-left: 2em;
  margin: 2em;
 }
+.quick-links:nth-child(1){
+  width: 40%;
+}
+.quick-links:nth-child(2){
+padding-left: 4em;
+}
 
 .quick-links h3{
   color: #9b59b6;
 }
 .quick-links p{
   color: gray;
-  font-size: .9em;
+  font-size: .8em;
+  margin-top: .24em;
 }
 .quick-links ul{
   display: flex;
@@ -733,6 +722,11 @@ footer{
 .quick-links:nth-child(3) ul{
   display: block;
 }
+.quick-links:nth-child(3) ul li a:hover{
+  color: gray;
+
+}
+
 .quick-links ul li{
   list-style: none;
  
@@ -740,11 +734,11 @@ footer{
 .quick-links ul li a{
   text-decoration: none;
   color: gray;
-  font-size: .9em;
+  font-size: .8em;
  
 }
 .quick-links ul li a i{
-  margin-right: .7em;
+  margin-right: 1em;
 }
 .quick-links ul li a:hover{
 color:#c084fc ;
@@ -768,11 +762,99 @@ color:#c084fc ;
 
 
 /* RESPONSIVE */
-/* Tablets and below */
+/* Tablets*/
+
+@media (min-width: 768px) and (max-width: 1200px) {
 
 
+  .hamburger {
+    display: none;
+  }
+  nav{
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    top: 2%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px white;
+    backdrop-filter: blur(10px);
+    position: fixed;
+  }
+  nav ul {
+    flex-direction: row;
+    position: static;
+    max-height: none;
+    opacity: 1;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  
+  .nav-btn {
+    display: none;
+  }
+  .hero .content {
 
-/* Mobile Devices (smaller than 480px) */
+    gap: 3em;
+  }
+  .hero .content .text{
+    width: 50%;
+  }
+  .hero .content .text p {
+    font-size: 0.9em;
+    margin-top: 2em;
+  }
+  .hero .content .text a {
+    width: 45%;
+  }
+  .about-me {
+    padding: 2em 1em;
+  }
+  .about-me .content{
+    gap: 2em;
+  }
+  .about-me .content .text {
+    width: 50%;
+ 
+  }
+  .about-me .content .text p {
+    font-size: 0.8em;
+    margin-top: 1.5em;
+  }
+  .about-me .content .text a {
+    width: 40%;
+  }
+    .about-me .content .image{
+    width: 25%;
+    }
+  
+  .gallery .cards .card {
+    width: 35%;
+    height: auto;
+    padding: 1em;
+    margin: 0;
+  }
+  .gallery .cards .card .text p {
+    font-size: 1.2vw
+  }
+  .gallery .cards .card .text a{
+    margin-top: 2em;
+  }
+  .quick-links {
+    margin: 0;
+  }
+  .quick-links:nth-child(1) {
+    width: 55%;
+  }
+  .quick-links:nth-child(2) {
+  }
+  .contact-container {
+    width: 60%;
+    padding: 2em 1em;
+  }
+}
+
+
+/* Mobile Devices (smaller than 768px) */
 
 @media (max-width: 768px) {
  .hamburger {
@@ -979,13 +1061,15 @@ text-align: center;
     width: 90%;
     margin: 2em;
   }
+    .gallery .cards .card .text{
+    width: 100%;
+    height: auto;
+    }
   .gallery .cards .card p{
-margin: 1.5em 0;
+margin:  0;
   }
 
-  .gallery .cards .card:hover {
-    width: 82%;
-  }
+
 
   .view-projects,
   .explore {
@@ -1030,6 +1114,12 @@ margin: 1.5em 0;
     padding: 0;
     margin: 0;
   }
+  .quick-links:nth-child(1){
+    width: 100%;
+  }
+  .quick-links:nth-child(2){
+    padding-left: 0;
+  }
 }
 
 
@@ -1037,9 +1127,6 @@ margin: 1.5em 0;
 
 
 
-@media (max-width: 480px){} ;
-@media (min-width: 480px) and (max-width: 768px){};
-@media (min-width: 768px) and (max-width: 1024px){};
-@media (min-width: 1024px) and (max-width: 1280px){};
+
 
 
