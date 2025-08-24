@@ -888,7 +888,7 @@ color:#c084fc ;
    border-radius: 0;
     margin: 0;
     backdrop-filter: blur(0px);
-    align-items: flex-start;
+    align-items: center;
     background-color: rgba(30, 0, 43, 0.95);
     position: fixed;
   }
